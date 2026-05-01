@@ -94,21 +94,26 @@ option = int(input("Enter your choice: "))
 
 if option == 1:
     createFile()
+    print("FILE CREATED SUCCESSFULLY!!! \n")
 elif option == 2:
     reading()
+    print("FILE DATA READ SUCCESSFULLY!!! \n")
 elif option == 3:
     
     val = int(input("If you want to update the file then enter 1 and if overwrite then enter 2: "))
 
     if val == 1:
         updateFile()
+        print("FILE UPDATED SUCCESSFULLY!!! \n")
     elif val == 2:
         overwriteFile()
+        print("FILE OVERWRITTEN SUCCESSFULLY!!! \n")
     else:
         print("Entered the wrong 'UPDATE' command")
 elif option == 4:
 
     fileName = input("Enter the name of the file to be deleted: \n")
     deleteFile(fileName)
+    print("FILE DELETED SUCCESSFULLY!!! \n")
 else:
     print("Unfortunately wrong choice")
